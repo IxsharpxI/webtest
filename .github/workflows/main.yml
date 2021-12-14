@@ -15,8 +15,8 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build webtest
       run: |
-        docker build ./c# -t IxsharpxI/webtest:1.0.0
+        docker build ./c# -t ixsharpxi/webtest:1.0.0
         
     - name: docker push
       run: |
-        docker push IxsharpxI/webtest:1.0.0
+        docker push ixsharpxi/webtest:1.0.0
