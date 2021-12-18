@@ -15,10 +15,10 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}  
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - name: docker build webtest
+    - name: docker build template
       run: |
-        docker build ./webtest -t ixsharpxi/webtest:1.0.0
+        docker build ./template -t ixsharpxi/template:1.0.0
         
     - name: docker push
       run: |
-        docker push ixsharpxi/webtest:1.0.0
+        docker push ixsharpxi/template:1.0.0
