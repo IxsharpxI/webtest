@@ -21,4 +21,4 @@ jobs:
         
     - name: docker push
       run: |
-        docker push ixsharpxi/template:1.0.0
+        docker push ixsharpxi/template
