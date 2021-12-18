@@ -4,7 +4,9 @@ on: [push]
 
 jobs:
   build:
+  
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v2
     - name: docker login
@@ -15,7 +17,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build webtest
       run: |
-        docker build ./c# -t ixsharpxi/webtest:1.0.0
+        docker build ./webtest -t ixsharpxi/webtest:1.0.0
         
     - name: docker push
       run: |
