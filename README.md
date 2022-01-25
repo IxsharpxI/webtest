@@ -6,7 +6,7 @@ This repo is designed to build a docker image based on nginx:alpine to expose we
 ## Website Content
 The Dockerfile actions automatically takes the files in the Template folder and copies them into /usr/share/nginx/html and the GitHub Actions builds the image out to docker hub. 
 
-To host your own content, simply add your html files in the template folder as you normally would in /user/share/nginx/html.
+To host your own content, simply add your html files in the template folder as you normally would in /user/share/nginx/html. Also update your dockerhub login information and repo in the .github file.
 
 ## Nginx Conf
 Included is configuration of the nginx.conf file in the Conf folder. This too gets automatically added into the docker image.
