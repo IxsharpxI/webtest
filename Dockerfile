@@ -4,7 +4,7 @@ FROM nginx:alpine
 COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 
 #content, comment out the ones you dont need
-COPY ./content /usr/share/nginx/html
+COPY ./template /usr/share/nginx/html
 
 #COPY ./*.html /user/share/nginx/html
 #COPY ./*.css /user/share/nginx/html
